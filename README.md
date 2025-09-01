@@ -38,9 +38,7 @@ Leading innovative AI solutions and research initiatives in a sponsored organiza
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BoozeLee&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&text_color=FFFFFF&icon_color=6366F1)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BoozeLee&theme=radical&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=6366F1&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=6366F1&sideLabels=6366F1&dates=6366F1)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BoozeLee&show_icons=true&theme=radical)
 
 ## 🤝 Let's Connect
 
@@ -50,7 +48,7 @@ Leading innovative AI solutions and research initiatives in a sponsored organiza
 
 ## 🎨 BoozeLee Logo
 
-![BoozeLee Logo](https://raw.githubusercontent.com/BoozeLee/BoozeLee/master/logo.png)
+![BoozeLee Logo](logo.png)
 
 *🎨 Custom AI-inspired logo created with Grok and CGdreams*
 
