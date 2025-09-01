@@ -48,11 +48,11 @@ Leading innovative AI solutions and research initiatives in a sponsored organiza
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/boozelee)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:boozelee@example.com)
 
-## 🎨 Custom Logo Placeholder
+## 🎨 BoozeLee Logo
 
-![Logo Placeholder](https://via.placeholder.com/200x200/6366F1/FFFFFF?text=LOGO)
+![BoozeLee Logo](https://raw.githubusercontent.com/BoozeLee/BoozeLee/master/logo.png)
 
-*🎨 Custom logo coming soon! Your artistic vision will be featured here.*
+*🎨 Custom AI-inspired logo created with Grok and CGdreams*
 
 ---
 
