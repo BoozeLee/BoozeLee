@@ -68,8 +68,8 @@ Leading innovative AI solutions and research initiatives in a sponsored organiza
 - **Project Management**: End-to-end AI project delivery
 
 ### 💳 Payment Methods
+- **Stripe**: Professional payment processing via secure checkout
 - **PayPal**: Secure payments via https://paypal.me/REALbakerstreet221b
-- **Stripe**: Professional payment processing (coming soon)
 - **Bank Transfer**: Direct business payments
 - **Cryptocurrency**: Bitcoin, Ethereum, and other major cryptocurrencies
 - **Contract Agreements**: Professional service contracts
@@ -93,11 +93,18 @@ Leading innovative AI solutions and research initiatives in a sponsored organiza
 [![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white)](https://dashboard.stripe.com)
 
 ### 📞 **Book a Consultation**
+
+#### **💳 Stripe Payments (Recommended)**
+- **Basic Consultation** ($150/hour): [Pay with Stripe](https://buy.stripe.com/test_4gM3co9CC1N6cjI5eZ2kw00)
+- **Development Services** ($200/hour): [Pay with Stripe](https://buy.stripe.com/test_bJedR2aGGezS1F45eZ2kw02)
+- **Project Management** ($250/hour): [Pay with Stripe](https://buy.stripe.com/test_14AbIU5mmezS83s6j32kw01)
+
+#### **💳 PayPal Payments**
 - **Basic Consultation** ($150/hour): [PayPal.me](https://paypal.me/REALbakerstreet221b)
 - **Development Services** ($200/hour): [PayPal.me](https://paypal.me/REALbakerstreet221b)
 - **Project Management** ($250/hour): [PayPal.me](https://paypal.me/REALbakerstreet221b)
 
-*💡 **Note**: Include your service type in the PayPal note for proper processing*
+*💡 **Note**: Stripe payments are processed securely. PayPal payments: include your service type in the note for proper processing*
 
 ## 🌟 Fun Facts
 
