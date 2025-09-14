@@ -80,7 +80,7 @@
 
 ### **Personal Profile README (@BoozeLee)**
 ```markdown
-# Hi there, I'm Harry Bolz 👋
+# Hi there, I'm BoozeLee 👋
 
 ## 🚀 AI Research Scientist & ML Engineer
 
