@@ -100,7 +100,7 @@ When updating profile information, ensure consistency across:
 
 ### Updating Profile Information
 1. Edit the main README.md for personal brand updates
-2. Update corresponding sections in subdirectory READMs
+2. Update corresponding sections in subdirectory READMEs
 3. Validate all links still work
 4. Check markdown formatting renders correctly
 5. Ensure consistency across all profile documents
