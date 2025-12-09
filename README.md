@@ -1,51 +1,65 @@
-# 👋 Hi there, I'm Kiliaan Vanvoorden
+# Kiliaan Vanvoorden (BoozeLee)
 
-![Sherlock Holmes Theme](https://img.shields.io/badge/Theme-Sherlock_Holmes-brown?style=for-the-badge&logo=detective)
+<div align="center">
 
-> *"Data! Data! Data! I can't make bricks without clay."* — Sherlock Holmes
+![Profile Banner](https://via.placeholder.com/1200x300?text=Kiliaan+Vanvoorden+|+AI+Architect+&+Neuromorphic+Engineer)
 
-## 🚀 About Me
+**AI/ML Architect | Neuromorphic Engineer | Enterprise Systems Strategist**
 
-I am an **AI Innovator** and **Enterprise Architect** based in **Belgium**, specializing in **Autonomous AI Systems**, **Regulatory Technology**, and **Privacy-First Architectures**. As the owner of the **Bakery Street Project**, I lead the development of deductive AI agents that operate with enterprise-grade security and local inference capabilities.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/kiliaan-vanvoorden)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:kiliaan2@gmail.com)
+[![Organization](https://img.shields.io/badge/Organization-Bakery_Street_Project-black?style=for-the-badge&logo=github)](https://github.com/Bakery-street-project)
 
-### 🎯 Core Focus
-- **Autonomous Agents**: Polymathic systems (Analyst, Artist, Engineer) for complex problem solving.
-- **Enterprise Security**: Local LLM inference (TensorRT-LLM, Ollama) ensuring data sovereignty.
-- **Regulatory Tech**: Compliance-focused AI solutions for regulated industries.
-- **Neuromorphic Computing**: Experimental algorithms for fractal and quantum navigation.
-
-## 🛠️ Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-## 🏆 Featured Projects
-
-### 🕵️‍♂️ [Bakery Street Project](https://github.com/Bakery-street-project)
-My primary organization focused on deductive AI innovation.
-- **[Terminal221b](https://github.com/Bakery-street-project/Terminal221b)**: Polymathic Autonomous Organization with Solana integration.
-- **[go-ai-coder](https://github.com/Bakery-street-project/go-ai-coder)**: Enterprise AI coding assistant.
-- **[AurobotNav](https://github.com/Bakery-street-project/AurobotNav)**: Secure navigation vessels with φ-A* algorithms.
-
-## 🤝 Let's Connect
-
-[![Email Personal](https://img.shields.io/badge/Personal-kiliaan2%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kiliaan2@gmail.com)
-[![Email Business](https://img.shields.io/badge/Business-kiliaan%40bakerstreetproject221B.store-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:kiliaan@bakerstreetproject221B.store)
-[![X (Twitter)](https://img.shields.io/badge/X-@Boozelee86-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/boozelee86)
-
-## 💼 Professional Services
-
-I offer specialized consulting in:
-- **AI Strategy & Implementation**: Deploying autonomous agents in enterprise environments.
-- **Regulatory Compliance**: Ensuring AI systems meet strict data privacy standards.
-- **Custom AI Development**: Tailored solutions using local LLMs and neuromorphic architectures.
+</div>
 
 ---
 
-<p align="center">
-  <i>"The game is afoot."</i><br>
-  <b>© 2025 Kiliaan Vanvoorden</b>
-</p>
+## 👨‍💻 Professional Profile
+
+I am an **Enterprise AI Architect** and **Neuromorphic Engineer** based in **Belgium 🇧🇪**, specializing in the design and deployment of autonomous AI systems and regulatory technology frameworks. My work focuses on bridging the gap between theoretical neuroscience-inspired computing and practical, scalable enterprise solutions.
+
+As the founder of **[Bakery Street Project](https://github.com/Bakery-street-project)**, I lead research into deductive AI agents that operate with high precision in regulated environments.
+
+### 🔬 Core Expertise
+
+*   **🧠 Neuromorphic Engineering:** Designing Spiking Neural Networks (SNNs) and biologically plausible cognitive architectures.
+*   **🤖 Autonomous Agents:** Building self-correcting, multi-agent systems for complex problem-solving.
+*   **🛡️ Regulatory Tech (RegTech):** Implementing AI governance, compliance auditing, and secure data pipelines.
+*   **🏗️ Enterprise Architecture:** Scalable microservices, distributed systems, and cloud-native infrastructure.
+
+---
+
+## 🛠️ Technical Arsenal
+
+### **Advanced AI & Compute**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorRT](https://img.shields.io/badge/TensorRT-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+
+### **Systems & Security**
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![NixOS](https://img.shields.io/badge/NixOS-5277C3?style=flat-square&logo=nixos&logoColor=white)
+![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+
+### **LLM Integration**
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-D96638?style=flat-square&logo=anthropic&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=flat-square&logo=google&logoColor=white)
+
+---
+
+## 📬 Contact & Engagement
+
+I am available for high-level consulting, enterprise architecture reviews, and collaborative research in neuromorphic computing.
+
+*   **Personal:** [kiliaan2@gmail.com](mailto:kiliaan2@gmail.com)
+*   **Business:** [kiliaan@bakerstreetproject221B.store](mailto:kiliaan@bakerstreetproject221B.store)
+*   **Location:** Belgium 🇧🇪
+
+---
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=BoozeLee&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
+</div>
