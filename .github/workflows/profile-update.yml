@@ -1,0 +1,21 @@
+name: Simple Profile Update
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly on Sunday
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Update date
+      run: |
+        sed -i 's/Last Updated]: .*/Last Updated]: 2026-01-10/' README.md
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        git commit -m 'chore: update profile date' || echo 'No changes'
+        git push || echo 'No changes to push'
+
