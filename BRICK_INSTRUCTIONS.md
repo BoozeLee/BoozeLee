@@ -2,16 +2,16 @@
 *Marco-o1 - 2026-02-20*
 
 ## What This Repo Does
-View the profile for project updates and contributions.
+Contains personal projects and resources.
 
 ## Price
-$0
+$1,999/month
 
 ## Brick Type
-Developer Profile
+Personal Repository
 
 ## Gumroad Copy
-Explore the projects of developer Kiliaan Van Voorden.
+Explore BoozeLee's personal projects.
 
 ## Build
 ```bash
