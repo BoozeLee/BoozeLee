@@ -1,51 +1,60 @@
 # Hi, I'm Kiliaan Vanvoorden 👋
 
-**AI Expert · Prompt Engineer · Generative AI Specialist**  
-📍 Riemst, Limburg, Belgium | 🌍 Available globally (remote)
+**AI Engineer · Automation Specialist · LLM Systems Developer**  
+📍 Hasselt, Belgium | 🌍 Remote-first | Open for contracts & freelance
 
-[![Job Application Toolkit 2026](https://img.shields.io/badge/Application_Toolkit-2026-blue?style=for-the-badge&logo=github)](https://boozelee.github.io/kiliaanvanvoorden-app-toolkit/)
-
-[View Full Interactive Toolkit](https://boozelee.github.io/kiliaanvanvoorden-app-toolkit/) – Cover Letters | Email Scripts | LinkedIn & GitHub Profiles | Strategy
+[![Portfolio](https://img.shields.io/badge/Application_Toolkit-2026-blue?style=for-the-badge&logo=github)](https://boozelee.github.io/kiliaanvanvoorden-app-toolkit/)
+[![Org](https://img.shields.io/badge/Org-Bakery--street--project-181717?style=for-the-badge&logo=github)](https://github.com/Bakery-street-project)
 
 ---
 
-## 🧠 What I Do
+## 🧠 What I Build
 
-I'm a self-directed AI practitioner with deep hands-on expertise across the full generative AI landscape. I don't have a computer science degree — I have something more practical: thousands of hours of direct work with frontier AI models, building real things for real use cases.
+Self-directed AI engineer with 4+ years building production AI systems — local LLM tooling, multi-agent orchestration, automation pipelines, and data infrastructure. Founder of [Baker Street Project](https://github.com/Bakery-street-project).
 
 ```
-Specialties: Prompt Engineering · LLM Evaluation · No-Code AI Automation
-             AI Training & Coaching · Generative AI Workflows · AI Strategy
+Focus: Local LLM deployment · Multi-agent systems · AI automation · LLM evaluation
+Stack: Python · Go · Rust · TypeScript · Shell
 ```
 
 ---
 
-## 🛠️ My Stack
+## 🛠️ Tech Stack
 
-**Language Models I work with daily:**  
-`Claude` `GPT-4o` `Gemini` `Grok` `Mistral` `Llama` `Perplexity`
-
-**Automation & Integration:**  
-`Make.com` `Zapier` `n8n` `LangChain (no-code)` `Hugging Face`
-
-**Developer Ecosystems (Active Member):**  
-`NVIDIA Developer Program` `Google GCP` `Anthropic Claude API`  
-`Groq Developer` `NASA TOPS` `xAI / Grok API`
+**AI & LLMs:** `Claude` `GPT-4o` `Gemini` `Grok` `Mistral` `Llama` `Ollama` `llama.cpp`  
+**Languages:** `Python` `Go` `Rust` `TypeScript` `Shell`  
+**Data:** `PostgreSQL` `Supabase` `Pandas` `NumPy` `Scikit-learn`  
+**Infra:** `Docker` `GitHub Actions` `Linux (Arch)` `FastAPI` `CUDA`  
+**Automation:** `LangChain` `Make.com` `n8n` `Hugging Face`
 
 ---
 
-## 📊 GitHub Stats
+## 📌 Featured Projects
 
-![Kiliaan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=BoozeLee&show_icons=true&theme=dark&hide_border=true)
+| Project | Stack | Description |
+|---------|-------|-------------|
+| [go-ai-coder](https://github.com/Bakery-street-project/go-ai-coder) | Go · Ollama | Enterprise AI coding assistant — local LLM, GitHub integration |
+| [Baker-Street-Laboratory-1](https://github.com/BoozeLee/Baker-Street-Laboratory-1) | Python · FastAPI | Autonomous AI research platform, 8 models, SaaS |
+| [conduit](https://github.com/BoozeLee/conduit) | Rust | Multi-agent terminal orchestration framework |
+| [go-research-spider](https://github.com/BoozeLee/go-research-spider) | Go | AI research web spider — Selenium + Playwright |
+| [ai-coding-agents](https://github.com/Bakery-street-project/ai-coding-agents) | Go | Complete AI coding agent ecosystem |
+| [rastacoder](https://github.com/BoozeLee/rastacoder) | Dart | Offline AI assistant for Android |
 
 ---
 
-## 🤝 Let's Connect
+## 🏛️ Developer Programs
 
-- 📧 **Email:** kiliaanv2@gmail.com  
-- 📱 **Phone:** +32 497 77 48 69  
-- 🌐 **Available for:** Remote contracts · Belgian AI roles · Freelance projects · AI training
+`NVIDIA DLI` `Google GCP` `Anthropic Claude API` `Groq` `NASA TOPS` `xAI / Grok`
 
 ---
 
-*"The best way to understand AI is to use it relentlessly, break it deliberately, and rebuild it better."*
+## 📊 Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BoozeLee&show_icons=true&theme=dark&hide_border=true)
+
+---
+
+## 🤝 Contact
+
+📧 bakerstreetbandit@zohomail.eu · 📱 +32 497 77 48 69  
+🌐 Available for: remote AI contracts · Belgian AI roles · freelance · AI training
