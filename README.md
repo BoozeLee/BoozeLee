@@ -4,7 +4,7 @@
 
 I build production software across the full stack — TypeScript, Go, Python, Rust — with a focus on AI agent systems, creator platforms, and local-first architectures. Founder of **Bakery-street-project**, an AI-agent engineering studio.
 
-🔗 [Portfolio](https://boozelee.github.io) · [Email](mailto:kiliaanv2@gmail.com) · [LinkedIn](https://linkedin.com/in/kiliaanvanvoorden)
+🔗 [Portfolio](https://boozelee.github.io) · [Email](mailto:bakerstreetbandit@zohomail.eu) · [LinkedIn](https://linkedin.com/in/kiliaanvanvoorden)
 
 ---
 
