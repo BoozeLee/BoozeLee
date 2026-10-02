@@ -1,135 +1,98 @@
 # Kiliaan Vanvoorden
 
-Self-taught engineer. I build the verification layer for AI systems — the gates, tests and
-CI that decide whether a system is actually right, and that fail loudly when it isn't.
+I build the verification layer for AI systems — the gates, tests and CI that decide
+whether a system is actually right, and that fail loudly when it isn't.
 
-**Open to AI engineering roles where the evaluation harness _is_ the job.** Available
-immediately, EU citizen based in Riemst, Belgium — no work sponsorship required, and able to
-work remotely for EU or US employers.
+**Open to AI engineering roles where the evaluation harness *is* the job.**
+Available immediately · EU citizen, Riemst (Belgium) · remote EU or US · no sponsorship required.
 
-- Email: [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
-- GitHub: [github.com/BoozeLee](https://github.com/BoozeLee)
+📧 [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
 
-Every number below came out of a command you can run. The command is next to the number.
+Every number below came out of a command you can run. The command sits next to the number.
 
----
+## Currently building
 
-## harness — an AI engineering pipeline, measured against the agent it replaces
+- **elohim** — next measurement track (mutation survival, shard pinning), landing daily
+- **harness** — v1.1.0 wheel and CI readiness floor; package release pending
+- **terminal221b** — release tagging and install hardening
 
-`scan` → `task` → `verify` → `pr`. A policy gate blocks protected-path writes and secret
-reads before the edit lands, evidence is bound to each claim, and a PR will not open unless
-the verdict is PASS — a skipped review counts as not passed.
+## Featured work
 
-```
-pip install harness-agent        # hatchling wheel; 12 subcommands
-pytest                           # -> 88 passed
-harness eval run --agent codex   # raw agent vs the same agent under the harness
-```
+### [elohim](https://github.com/BoozeLee/elohim) — a gate for numerical claims · MIT
 
-The evaluation is the part worth arguing about. 6 tasks, each run twice — once raw, once
-harnessed — 13 runs, graded by a hidden acceptance suite the agent never sees:
+Six instruments measure hard mathematics, pin every result they claim, and refuse to pass
+if anything moved — including the instrument itself. Break a file on purpose: the gate
+names it.
 
-- **11 / 13 graded PASS.** The only failure was one task, on both variants, on a genuine
-  edge case in the agent's own output.
-- Scope violations: **raw 3, harnessed 4.** The harness did not improve that number; the
-  contract was amended after the runner flagged them. It is in the report because that is
-  what the run produced.
-- First-pass gates read FAIL on every harnessed run — the independent-review pass hit the
-  provider session limit. Recorded, not skipped.
-
-- 88 tests passing · 6,646 non-blank tracked lines (Python 4,378) · AGPL-3.0
-- `harness scan --fail-under 70` exits 1 below the readiness floor
-- Guard runs as a `PreToolUse` hook: a blocked write exits 2 and logs to `.ai-engineering/audit.log`
-- [github.com/BoozeLee/harness](https://github.com/BoozeLee/harness)
-
-## elohim — a gate for numerical claims (private; available to show on request)
-
-Six instruments measure hard mathematics, pin every result they claim, and refuse to pass if
-anything moved — including the instrument itself.
-
-```
-cd <checkout>          # private repo; ask me and I will share the clone
-python3 tests/test_all.py       # -> ALL_SKILLS_PASS
+```bash
+python3 tests/test_all.py   # → ALL_SKILLS_PASS; verdict FAIL + PIN DRIFT on any tampered copy
 ```
 
-Then break something on purpose. The same command reports `verdict FAIL` with a `PIN DRIFT`
-line naming the file whose checksum changed. A verification tool that cannot fail proves
-nothing, so the tamper half is part of the gate itself:
+**81 facts · 107 checksum-pinned values · 0 unclassified · 6/6 seeded tampering caught** ·
+26 commits, 20,639 non-blank lines, measured at `114f660`
 
-- **6 / 6 injected-tamper cases caught**, each emitting `verdict FAIL` + `PIN DRIFT`
-- Claim binding: 72 facts, 52 pinned values, 17 declared exemptions, **0 unclassified**
-- 7 shipped skills · 19,836 non-blank tracked lines (Python 19,699) · MIT · 21 commits
-- Private while I finish the next measurement track — the runnable gate above is the proof
+### [harness](https://github.com/BoozeLee/harness) — the AI engineering pipeline, measured against the agent it replaces · AGPL-3.0
 
-## terminal221b — a coding CLI bounded to a workspace, with a Rust TUI
+`scan → task → verify → pr`. Protected-path writes and secret reads are blocked before an
+agent's edit lands; a PR refuses to open unless the verdict is PASS — a skipped review
+counts as not passed. The evaluation runs the same agent raw and harnessed against a
+hidden acceptance suite: **11/13 graded PASS**, and the unflattering number is published
+too (scope violations: raw 3, harnessed 4).
 
-An installable local-first CLI in TypeScript with a `ratatui` terminal UI, plus an Expo chat
-client. Context is bounded by path rather than by a token budget, untrusted command output is
-redacted before it reaches a stored transcript, and every patch passes a reviewed envelope.
-
-```
-npm ci && npm test               # -> 385 passed
-cargo test -p terminal221b-tui   # -> 60 passed
+```bash
+pip install git+https://github.com/BoozeLee/harness.git   # 1.1.0
+pytest                                                     # → 88 passed
 ```
 
-- **445 tests total** (385 TypeScript + 60 Rust) · 55 commits · 16,210 non-blank tracked lines
-- Test modules include `path-guard`, `boundary-drift`, `scope` and `security` — the
-  containment properties, not only the happy paths
-- AGPL-3.0 · [github.com/BoozeLee/terminal221b](https://github.com/BoozeLee/terminal221b)
+**88 tests · 11 subcommands · 48 commits** · `scan --fail-under 70` exits 1 below the
+floor · wheel + sdist build via `uv build`
 
-## repotruth — CI that reads the repository, not just the diff
+### [terminal221b](https://github.com/BoozeLee/terminal221b) — a coding CLI bounded to a workspace · AGPL-3.0
 
-Indexes a repository into a knowledge graph, then exposes it three ways: an MCP server an
-agent can query, a CLI, and a fleet service. It also receives webhooks, and it treats an
-unverified push as an attack surface rather than as a fact:
+TypeScript CLI with a Rust `ratatui` TUI and an Expo client. Context is bounded by path,
+not by a token budget; untrusted output is redacted before it reaches a stored
+transcript; the test modules are the containment properties (`path-guard`,
+`boundary-drift`, `scope`).
 
+```bash
+npm ci && npm test    # → 385 passed
+cargo test            # → 60 passed
 ```
-npm ci && npm test               # -> 147 passed, 32 suites
-node dist/src/bin.js audit .. --format json
+
+**445 tests total (385 TypeScript + 60 Rust) · 55 commits · 16,210 non-blank lines**
+
+### [mcp-regression-lab](https://github.com/BoozeLee/mcp-regression-lab) — CI that catches silent agent breakage · ISC
+
+A GitHub Action that diffs an MCP server's tool contract across releases, so a renamed or
+narrowed tool fails CI instead of failing in production. Untrusted tool text is escaped
+before it reaches a PR comment.
+
+```bash
+npm ci && npm test    # → 29 passed
 ```
 
-- A correctly signed push is accepted. A **replayed** delivery answers `200` and does not
-  re-run the scan. An **unsigned** push is rejected with `400` and nothing is queued. A
-  **tampered body carrying an otherwise-valid signature** is rejected.
-- `audit` emits `schemaVersion 1.0.0` and reports `truncated: false` rather than silently
-  truncating when input exceeds its declared limits
-- 5,974 non-blank tracked lines · AGPL-3.0
-  · [github.com/Bakery-street-project/galacticfederation](https://github.com/Bakery-street-project/galacticfederation)
+**29 tests · 1,247 non-blank TypeScript lines**
 
----
+**Also public:** [repotruth](https://github.com/Bakery-street-project/galacticfederation) —
+CI that reads the repository, not just the diff: signed-webhook verification (replay →
+idempotent 200, unsigned → 400 and nothing queued, tampered body rejected), one audit
+core exposed as CLI, MCP server and fleet dashboard. 147 tests across 32 suites.
 
-## Also built
-
-- **mcp-regression-lab** — a GitHub Action that diffs an MCP server's tool contract across
-  releases, because model upgrades rename and narrow tools without announcing it. 29 tests
-  passing. [public](https://github.com/BoozeLee/mcp-regression-lab)
-- **mycroft** — fixed-scope AI diagnostics that end in a written Minimum Viable Action.
-  [public](https://github.com/BoozeLee/mycroft)
-- Private, available to show on request: **capo** (349 tests across five packages),
-  **superbrain** (298 passing tests), **beehive-studio** (54,550 non-blank tracked lines).
+**Private, available to show on request:** capo (349 tests across five packages) ·
+superbrain (298 passing tests) · beehive-studio (54,550 non-blank lines).
 
 ## How I work
 
-Give an agent a task and it will report success whether or not it succeeded. The interesting
-work is the part where you check. So I have built the checks I wanted to exist: instruments
-that re-derive their own numbers, gates tested by being broken on purpose, harnesses measured
-against the thing they are meant to replace — including when the measurement is unflattering.
-That is the work I want to be paid for.
+Give an agent a task and it will report success whether or not it succeeded. The
+interesting work is the part where you check. So I built the checks I wanted to exist:
+instruments that re-derive their own numbers, gates tested by being broken on purpose, a
+harness measured against the thing it replaces — including where the measurement is
+unflattering. That is the work I want to be paid for.
 
-## What I don't claim
+## Honest scope
 
-- **No degree, no certifications.** Self-taught.
-- **No prior employment.** This is my first job. I have never been paid to write software and
-  I do not describe myself as having been.
-- **`Bakery-street-project` is a personal project of mine, not a company.** No customers, no
-  revenue, no deployments. I do not call myself a founder of it.
-- **No adoption story.** All six of my public repositories have 0 stars, 0 forks and 0
-  watchers, as does the seventh I publish under my org. I have no users and no usage numbers.
-- **Docker, Kubernetes and Go appear nowhere in my code.** I have not shipped a container or a
-  cluster, and Go is listed here only so you know to discount it if a job ad asks for it.
-- Everything above the line is verifiable by cloning the repository and running the command
-  shown next to it.
-
----
-
-![Profile views](https://komarev.com/ghpvc/?username=BoozeLee&style=flat-square&color=blue)
+No degree or certifications, and no prior employment — this would be my first role.
+`Bakery-street-project` is my personal project, not a company. Every public repo has
+0 stars and no users; there is no adoption story. Docker, Kubernetes and Go appear
+nowhere in my code. Everything above is verifiable by cloning the repository and running
+the command shown.
