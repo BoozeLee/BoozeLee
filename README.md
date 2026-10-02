@@ -42,13 +42,13 @@ harnessed — 13 runs, graded by a hidden acceptance suite the agent never sees:
 - Guard runs as a `PreToolUse` hook: a blocked write exits 2 and logs to `.ai-engineering/audit.log`
 - [github.com/BoozeLee/harness](https://github.com/BoozeLee/harness)
 
-## elohim — a gate for numerical claims
+## elohim — a gate for numerical claims (private; available to show on request)
 
 Six instruments measure hard mathematics, pin every result they claim, and refuse to pass if
 anything moved — including the instrument itself.
 
 ```
-git clone https://github.com/BoozeLee/elohim && cd elohim
+cd <checkout>          # private repo; ask me and I will share the clone
 python3 tests/test_all.py       # -> ALL_SKILLS_PASS
 ```
 
@@ -58,8 +58,8 @@ nothing, so the tamper half is part of the gate itself:
 
 - **6 / 6 injected-tamper cases caught**, each emitting `verdict FAIL` + `PIN DRIFT`
 - Claim binding: 72 facts, 52 pinned values, 17 declared exemptions, **0 unclassified**
-- 7 shipped skills · 19,831 non-blank tracked lines (Python 19,615) · MIT · CI + CodeQL green
-- [github.com/BoozeLee/elohim](https://github.com/BoozeLee/elohim)
+- 7 shipped skills · 19,836 non-blank tracked lines (Python 19,699) · MIT · 21 commits
+- Private while I finish the next measurement track — the runnable gate above is the proof
 
 ## terminal221b — a coding CLI bounded to a workspace, with a Rust TUI
 
@@ -123,8 +123,8 @@ That is the work I want to be paid for.
   I do not describe myself as having been.
 - **`Bakery-street-project` is a personal project of mine, not a company.** No customers, no
   revenue, no deployments. I do not call myself a founder of it.
-- **No adoption story.** All seven of my public repositories have 0 stars, 0 forks and 0
-  watchers. I have no users and no usage numbers.
+- **No adoption story.** All six of my public repositories have 0 stars, 0 forks and 0
+  watchers, as does the seventh I publish under my org. I have no users and no usage numbers.
 - **Docker, Kubernetes and Go appear nowhere in my code.** I have not shipped a container or a
   cluster, and Go is listed here only so you know to discount it if a job ad asks for it.
 - Everything above the line is verifiable by cloning the repository and running the command
