@@ -4,7 +4,7 @@ I build the verification layer for AI systems — the gates, tests and CI that d
 whether a system is actually right, and that fail loudly when it isn't.
 
 **Open to AI engineering roles where the evaluation harness *is* the job.**
-Available immediately · EU citizen, Riemst (Belgium) · remote EU or US · no sponsorship required.
+Based in Riemst, Belgium · open to remote roles · employment or contract.
 
 📧 [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
 
