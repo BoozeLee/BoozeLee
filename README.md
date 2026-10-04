@@ -8,7 +8,7 @@ Based in Riemst, Belgium · open to remote roles · employment or contract.
 
 📧 [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
 
-Every number below came out of a command you can run. The command sits next to the number.
+Every number below was produced by a command in the repository — I walk through each one live on request.
 
 ## Currently building
 
@@ -18,7 +18,7 @@ Every number below came out of a command you can run. The command sits next to t
 
 ## Featured work
 
-### [elohim](https://github.com/BoozeLee/elohim) — a gate for numerical claims · MIT
+### elohim — a gate for numerical claims · MIT
 
 Six instruments measure hard mathematics, pin every result they claim, and refuse to pass
 if anything moved — including the instrument itself. Break a file on purpose: the gate
@@ -31,7 +31,7 @@ python3 tests/test_all.py   # → ALL_SKILLS_PASS; verdict FAIL + PIN DRIFT on a
 **81 facts · 107 checksum-pinned values · 0 unclassified · 6/6 seeded tampering caught** ·
 43 commits, 22,196 non-blank lines, measured at `a047ccd`
 
-### [harness](https://github.com/BoozeLee/harness) — the AI engineering pipeline, measured against the agent it replaces · AGPL-3.0
+### harness — the AI engineering pipeline, measured against the agent it replaces · AGPL-3.0
 
 `scan → task → verify → pr`. Protected-path writes and secret reads are blocked before an
 agent's edit lands; a PR refuses to open unless the verdict is PASS — a skipped review
@@ -40,14 +40,15 @@ hidden acceptance suite: **11/13 graded PASS**, and the unflattering number is p
 too (scope violations: raw 3, harnessed 4).
 
 ```bash
-pip install git+https://github.com/BoozeLee/harness.git   # 1.1.0
 pytest                                                     # → 88 passed
 ```
+
+**(The repo is private during review; the install line and every command here run in a screen share.)**
 
 **88 tests · 11 subcommands · 48 commits** · `scan --fail-under 70` exits 1 below the
 floor · wheel + sdist build via `uv build`
 
-### [terminal221b](https://github.com/BoozeLee/terminal221b) — a coding CLI bounded to a workspace · AGPL-3.0
+### terminal221b — a coding CLI bounded to a workspace · AGPL-3.0
 
 TypeScript CLI with a Rust `ratatui` TUI and an Expo client. Context is bounded by path,
 not by a token budget; untrusted output is redacted before it reaches a stored
@@ -61,7 +62,7 @@ cargo test            # → 60 passed
 
 **445 tests total (385 TypeScript + 60 Rust) · 55 commits · 16,210 non-blank lines**
 
-### [mcp-regression-lab](https://github.com/BoozeLee/mcp-regression-lab) — CI that catches silent agent breakage · ISC
+### mcp-regression-lab — CI that catches silent agent breakage · ISC
 
 A GitHub Action that diffs an MCP server's tool contract across releases, so a renamed or
 narrowed tool fails CI instead of failing in production. Untrusted tool text is escaped
@@ -73,7 +74,8 @@ npm ci && npm test    # → 29 passed
 
 **29 tests · 1,247 non-blank TypeScript lines**
 
-**Also public:** [repotruth](https://github.com/Bakery-street-project/galacticfederation) —
+The four featured repos are private during review — every claim above is reproducible in a
+screen share. **Also public:** [repotruth](https://github.com/Bakery-street-project/galacticfederation) —
 CI that reads the repository, not just the diff: signed-webhook verification (replay →
 idempotent 200, unsigned → 400 and nothing queued, tampered body rejected), one audit
 core exposed as CLI, MCP server and fleet dashboard. 147 tests across 32 suites.
