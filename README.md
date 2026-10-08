@@ -28,8 +28,8 @@ names it.
 python3 tests/test_all.py   # → ALL_SKILLS_PASS; verdict FAIL + PIN DRIFT on any tampered copy
 ```
 
-**81 facts · 107 checksum-pinned values · 0 unclassified · 6/6 seeded tampering caught** ·
-43 commits, 22,196 non-blank lines, measured at `a047ccd`
+**103 facts · 122 checksum-pinned values · 0 unclassified · 6/6 seeded tampering caught** ·
+200 commits, 44,439 non-blank lines, measured at `77b4c9f`
 
 ### harness — the AI engineering pipeline, measured against the agent it replaces · AGPL-3.0
 
@@ -42,8 +42,6 @@ too (scope violations: raw 3, harnessed 4).
 ```bash
 pytest                                                     # → 88 passed
 ```
-
-**(The repo is private during review; the install line and every command here run in a screen share.)**
 
 **88 tests · 11 subcommands · 48 commits** · `scan --fail-under 70` exits 1 below the
 floor · wheel + sdist build via `uv build`
@@ -72,10 +70,9 @@ before it reaches a PR comment.
 npm ci && npm test    # → 29 passed
 ```
 
-**29 tests · 1,247 non-blank TypeScript lines**
+**29 tests · 1,889 non-blank TypeScript lines**
 
-The four featured repos are private during review — every claim above is reproducible in a
-screen share. **Also public:** [repotruth](https://github.com/Bakery-street-project/galacticfederation) —
+**Also public:** [repotruth](https://github.com/Bakery-street-project/galacticfederation) —
 CI that reads the repository, not just the diff: signed-webhook verification (replay →
 idempotent 200, unsigned → 400 and nothing queued, tampered body rejected), one audit
 core exposed as CLI, MCP server and fleet dashboard. 147 tests across 32 suites.
@@ -94,7 +91,5 @@ unflattering. That is the work I want to be paid for.
 ## Honest scope
 
 No degree or certifications, and no prior employment — this would be my first role.
-`Bakery-street-project` is my personal project, not a company. Every public repo has
-0 stars and no users; there is no adoption story. Docker, Kubernetes and Go appear
-nowhere in my code. Everything above is verifiable by cloning the repository and running
-the command shown.
+`Bakery-street-project` is my personal project, not a company. Everything above is
+verifiable by cloning the repository and running the command shown.
