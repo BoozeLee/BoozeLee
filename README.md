@@ -87,8 +87,10 @@ CI that reads the repository, not just the diff: signed-webhook verification (re
 idempotent 200, unsigned → 400 and nothing queued, tampered body rejected), one audit
 core exposed as CLI, MCP server and fleet dashboard. 147 tests across 32 suites.
 
-**Private, available to show on request:** capo (349 tests across five packages) ·
-superbrain (298 passing tests) · beehive-studio (54,550 non-blank lines).
+**Private, available to show on request:** capo (232 passing tests across four
+packages, on its `family/v0.1` branch) · superbrain (443 Python and 91 Rust tests
+passing in CI, plus a Groq answer mode that prints only gate-checked numbers) ·
+beehive-studio (about 50,000 non-blank source lines).
 
 ## How I work
 
