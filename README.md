@@ -10,7 +10,7 @@ Based in Riemst, Belgium · open to remote roles · employment or contract.
 
 **Start here:** [elohim](https://github.com/Quattro-Commas/elohim) — the gate ·
 [harness](https://github.com/Quattro-Commas/harness) — the gate around an agent ·
-[eval-gates](https://github.com/Quattro-Commas/eval-gates) — the thesis in one place
+[Quattro Commas](https://github.com/Quattro-Commas) — the thesis and every gate in one place
 
 The same work is also DevSecOps and backend work: CI that blocks a bad release
 ([mcp-regression-lab](https://github.com/Quattro-Commas/mcp-regression-lab)), signed-webhook
