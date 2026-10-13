@@ -8,6 +8,16 @@ Based in Riemst, Belgium · open to remote roles · employment or contract.
 
 📧 [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
 
+**Start here:** [elohim](https://github.com/Quattro-Commas/elohim) — the gate ·
+[harness](https://github.com/Quattro-Commas/harness) — the gate around an agent ·
+[eval-gates](https://github.com/Quattro-Commas/eval-gates) — the thesis in one place
+
+The same work is also DevSecOps and backend work: CI that blocks a bad release
+([mcp-regression-lab](https://github.com/Quattro-Commas/mcp-regression-lab)), signed-webhook
+services ([repotruth](https://github.com/Quattro-Commas/repotruth)), and guards on what an agent
+may read or write ([harness](https://github.com/Quattro-Commas/harness)). I run
+[Quattro Commas](https://github.com/Quattro-Commas) as a one-person studio and take contract work.
+
 Every number below was produced by a command in the repository — I walk through each one live on request.
 
 ## Currently building
@@ -72,7 +82,7 @@ npm ci && npm test    # → 29 passed
 
 **29 tests · 1,889 non-blank TypeScript lines**
 
-**Also public:** [repotruth](https://github.com/Bakery-street-project/galacticfederation) —
+**Also public:** [repotruth](https://github.com/Quattro-Commas/repotruth) —
 CI that reads the repository, not just the diff: signed-webhook verification (replay →
 idempotent 200, unsigned → 400 and nothing queued, tampered body rejected), one audit
 core exposed as CLI, MCP server and fleet dashboard. 147 tests across 32 suites.
