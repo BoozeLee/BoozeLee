@@ -14,7 +14,7 @@ Based in Riemst, Belgium · open to remote roles · employment or contract.
 
 The same work is also DevSecOps and backend work: CI that blocks a bad release
 ([mcp-regression-lab](https://github.com/Quattro-Commas/mcp-regression-lab)), signed-webhook
-services ([repotruth](https://github.com/Quattro-Commas/repotruth)), and guards on what an agent
+services (repotruth, private), and guards on what an agent
 may read or write ([harness](https://github.com/Quattro-Commas/harness)). I run
 [Quattro Commas](https://github.com/Quattro-Commas) as a one-person studio and take contract work.
 
@@ -82,12 +82,9 @@ npm ci && npm test    # → 29 passed
 
 **29 tests · 1,889 non-blank TypeScript lines**
 
-**Also public:** [repotruth](https://github.com/Quattro-Commas/repotruth) —
-CI that reads the repository, not just the diff: signed-webhook verification (replay →
-idempotent 200, unsigned → 400 and nothing queued, tampered body rejected), one audit
-core exposed as CLI, MCP server and fleet dashboard. 147 tests across 32 suites.
-
-**Private, available to show on request:** capo (232 passing tests across four
+**Private, available to show on request:** repotruth (CI that reads the repository,
+not just the diff: signed-webhook verification, one audit core exposed as CLI, MCP
+server and fleet dashboard) · capo (232 passing tests across four
 packages, on its `family/v0.1` branch) · superbrain (443 Python and 91 Rust tests
 passing in CI, plus a Groq answer mode that prints only gate-checked numbers) ·
 beehive-studio (about 50,000 non-blank source lines).
