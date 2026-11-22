@@ -1,104 +1,38 @@
 # Kiliaan Vanvoorden
 
-I build the verification layer for AI systems — the gates, tests and CI that decide
-whether a system is actually right, and that fail loudly when it isn't.
+I build the checks that decide whether an AI system is right — and the small, local-first tools that make that checkable by hand.
 
-**Open to AI engineering roles where the evaluation harness *is* the job.**
-Based in Riemst, Belgium · open to remote roles · employment or contract.
+**Open to AI engineering and creative-tools roles.** Based in Riemst, Belgium · open to remote · employment or contract.
 
 📧 [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
 
-**Start here:** [elohim](https://github.com/Quattro-Commas/elohim) — the gate ·
-[harness](https://github.com/Quattro-Commas/harness) — the gate around an agent ·
-[Quattro Commas](https://github.com/Quattro-Commas) — the thesis and every gate in one place
+## Public work
 
-The same work is also DevSecOps and backend work: CI that blocks a bad release
-([mcp-regression-lab](https://github.com/Quattro-Commas/mcp-regression-lab)), signed-webhook
-services (repotruth, private), and guards on what an agent
-may read or write ([harness](https://github.com/Quattro-Commas/harness)). I run
-[Quattro Commas](https://github.com/Quattro-Commas) as a one-person studio and take contract work.
+### [murmur](https://github.com/BoozeLee/murmur) — a one-button painting idea deck · Next.js + TypeScript
 
-Every number below was produced by a command in the repository — I walk through each one live on request.
+A web app for one painter who freezes in front of the easel. One press gives one idea: what to paint, the artistic problem inside it, where the light comes from, a palette, and a single line she can read from the easel. Keep it or refuse it — refused cards stop coming back.
 
-## Currently building
+No account, no notifications, no feed. The deck is the product. A daily push notification was built and then deliberately removed because nobody asked for it.
 
-- **elohim** — next measurement track (mutation survival, shard pinning), landing daily
-- **harness** — v1.1.0 wheel and CI readiness floor; package release pending
-- **terminal221b** — release tagging and install hardening
-
-## Featured work
-
-### elohim — a gate for numerical claims · MIT
-
-Six instruments measure hard mathematics, pin every result they claim, and refuse to pass
-if anything moved — including the instrument itself. Break a file on purpose: the gate
-names it.
-
-```bash
-python3 tests/test_all.py   # → ALL_SKILLS_PASS; verdict FAIL + PIN DRIFT on any tampered copy
-```
-
-**103 facts · 122 checksum-pinned values · 0 unclassified · 6/6 seeded tampering caught** ·
-200 commits, 44,439 non-blank lines, measured at `77b4c9f`
-
-### harness — the AI engineering pipeline, measured against the agent it replaces · AGPL-3.0
-
-`scan → task → verify → pr`. Protected-path writes and secret reads are blocked before an
-agent's edit lands; a PR refuses to open unless the verdict is PASS — a skipped review
-counts as not passed. The evaluation runs the same agent raw and harnessed against a
-hidden acceptance suite: **11/13 graded PASS**, and the unflattering number is published
-too (scope violations: raw 3, harnessed 4).
-
-```bash
-pytest                                                     # → 88 passed
-```
-
-**88 tests · 11 subcommands · 48 commits** · `scan --fail-under 70` exits 1 below the
-floor · wheel + sdist build via `uv build`
-
-### terminal221b — a coding CLI bounded to a workspace · AGPL-3.0
-
-TypeScript CLI with a Rust `ratatui` TUI and an Expo client. Context is bounded by path,
-not by a token budget; untrusted output is redacted before it reaches a stored
-transcript; the test modules are the containment properties (`path-guard`,
-`boundary-drift`, `scope`).
-
-```bash
-npm ci && npm test    # → 385 passed
-cargo test            # → 60 passed
-```
-
-**445 tests total (385 TypeScript + 60 Rust) · 55 commits · 16,210 non-blank lines**
-
-### mcp-regression-lab — CI that catches silent agent breakage · ISC
-
-A GitHub Action that diffs an MCP server's tool contract across releases, so a renamed or
-narrowed tool fails CI instead of failing in production. Untrusted tool text is escaped
-before it reaches a PR comment.
-
-```bash
-npm ci && npm test    # → 29 passed
-```
-
-**29 tests · 1,889 non-blank TypeScript lines**
-
-**Private, available to show on request:** repotruth (CI that reads the repository,
-not just the diff: signed-webhook verification, one audit core exposed as CLI, MCP
-server and fleet dashboard) · capo (232 passing tests across four
-packages, on its `family/v0.1` branch) · superbrain (443 Python and 91 Rust tests
-passing in CI, plus a Groq answer mode that prints only gate-checked numbers) ·
-beehive-studio (about 50,000 non-blank source lines).
+- **Corpus-first:** 53 hand-written cards answer instantly (~100 ms). A local 30B mixture-of-experts model writes new cards overnight while the machine is idle, so waiting on a model is never part of asking for an idea.
+- **Bounded generation:** the on-demand writer produces a card through a JSON Schema it cannot escape (~40–65 s).
+- **Local-first:** the core path has no cloud dependency, and the deck remembers refusals so it adapts to one person's taste instead of an engagement metric.
 
 ## How I work
 
-Give an agent a task and it will report success whether or not it succeeded. The
-interesting work is the part where you check. So I built the checks I wanted to exist:
-instruments that re-derive their own numbers, gates tested by being broken on purpose, a
-harness measured against the thing it replaces — including where the measurement is
-unflattering. That is the work I want to be paid for.
+Give an agent a task and it will report success whether or not it succeeded. The interesting work is the part where you check. So I build the checks I wanted to exist: instruments that re-derive their own numbers, gates that are tested by being broken on purpose, and evaluations that publish the unflattering result alongside the good one. That is the work I want to be paid for.
+
+## Selected work — private, available to show on request
+
+I keep most repositories private by choice. I can walk through any of these live:
+
+- **elohim** — 103 facts with 122 checksum-pinned values, and six seeded tampering tests that must fail.
+- **harness** — a contract-gated agent pipeline where a skipped review is not a pass.
+- **terminal221b** — a coding CLI bounded by path, not by token budget.
+- **repotruth** — CI that reads the repository, not just the diff; signed webhook verification.
+- **cryptojukebox** — browser-local audio analysis that turns owned music into creative artifacts.
+- **verification-spine** — stdlib-only Python that refuses to call a claim proven unless its evidence could actually have failed.
 
 ## Honest scope
 
-No degree or certifications, and no prior employment — this would be my first role.
-`Bakery-street-project` is my personal project, not a company. Everything above is
-verifiable by cloning the repository and running the command shown.
+No degree or certifications, and no prior employment — this would be my first role. `Bakery-street-project` and `Quattro-Commas` are my personal projects, not companies. Every number I quote was produced by a command I can re-run.
